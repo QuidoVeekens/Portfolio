@@ -1,0 +1,803 @@
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    
+    height: 100%;
+    width: 100%;
+    font-family: "gothiks-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 10px;
+
+  }
+  body {
+    font-family: "gothiks-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 10px;
+    background-color: #29ABE2;
+    font-size: 1.6rem;
+    margin: 0px;
+    
+  }
+
+
+*    {
+    box-sizing: border-box
+}
+
+a   {
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+}
+
+
+a > h4:hover    {
+    color: #8BEC87;
+}
+
+a:hover   {
+    color: #8BEC87;
+}
+
+
+main    {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+}
+
+main > div   {
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: 15vw;
+    height: 100%;
+}
+
+.frontPage  {
+    background-image: url(/Images/myFaceMoiree.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Buttons */
+
+
+
+button  {
+    box-sizing: content-box;
+    font-family: "gothiks-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    margin: 0.5vw;
+    width: 12.8vw;
+    height: 6.4vh;
+    /* margin: 0.5vw; */
+    border-radius: 5px;
+    border: 0.3vw solid white;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+
+.activeButton   {
+    color:#8BEC87;
+    border-color: #8BEC87;
+}
+
+
+
+.activeLowHeader    {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.activeMenuItem  {
+    color: #8bec87;  
+}
+
+
+/* fonts */
+
+h1  {
+  
+    margin: 0px;
+    padding: 0px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 6vh;
+    letter-spacing: 0.3rem;  
+}
+
+h2  {
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+}
+
+h3  {
+    margin: 0 0 0 0;
+    color: rgba(255, 255, 255, 1);
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 9px;
+    width: fit-content;
+    
+}
+
+h4  {
+    margin: 0px;
+    color: white;
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    z-index: 199;
+}
+
+h5  {
+    margin: 0px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+}
+
+
+h6  {
+    margin: 0;
+    font-family: "calling-code", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 0.7vw;
+    color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+/* Header */
+
+
+.upperHeader    {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.middleHeader    {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lowerHeader    {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.middleHeader > div   {
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 15vw;
+    height: 100%;
+}
+
+.upperHeader > div   {
+    display: inline-block;
+    width: 15vw;
+    height: 100%;
+}
+
+.lowerHeader > div   {
+    align-items: center;
+    display: flex;
+    width: 15vw;
+    height: 100%;
+}
+
+
+header  {
+    height: 30vh;
+    width: 100vw;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* leftblock */
+
+.leftBlock {
+    position: relative;
+    width: 30vw;
+    height: 100%;
+    z-index: 99;
+}
+
+.leftBlock > div   {
+    height: 10vh;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.titelCard  {
+    position: absolute;
+    height: 7.5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    justify-content: end; 
+    z-index: 99;
+    
+}
+
+.titelCard  > h3    {
+    margin-bottom: -1vh;
+}
+
+
+.titleoverlayLeftBlock  {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 1vh;
+    height: 10vh; 
+    width: 30vw;
+}
+
+
+.overlayleftBlock   {
+    position: relative;
+    width: 45vw;
+    height: 40vh;
+    z-index: 99;
+}
+
+.companyName    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    z-index: 99;
+}
+
+.companyName    > div   {
+    z-index: 99;
+
+}
+
+.subMenu   > div {
+    padding: 0 1vw 1vh 0;
+    text-align: right;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* middleblock */
+
+.overlayMiddleBlock  > div{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end ;
+    height: 10vh;
+    width: 100%;
+    padding-right: 2vw;
+    
+}
+
+.middleBlock > div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end ;
+    
+    height: 10vh;
+    padding-right: 3vw;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+    
+.overlayMiddleBlock  {
+    position: relative;
+    width: 15vw;
+    height: 100%;
+    font-size: 4rem;
+    color: white;
+    z-index: 99;
+}
+
+.middleBlock    { 
+    position: relative;
+    width: 15vw;
+    height: 100%;
+    text-align: right;
+    font-size: 4rem;
+    color: white;
+}
+
+.phoneDiv   {
+    display: none;
+}
+
+
+
+.overlayMiddleBlock  > div {
+    align-items: end;
+}
+
+
+
+/* right block */
+
+.photoLink:hover   {
+    border: 1vh solid #8BEC87;
+}
+
+
+.overlayHeroImg, .overlayHeroImgBig   {
+    position: relative;
+    width: 30vw;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+.overlayHeroImgBig   {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+
+.overlayHeroImgBig > div:nth-child(2)   {
+    position: relative;
+    width: 55vw;
+    height: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.2); 
+}
+
+
+
+.overlayHeroImgBig > div:nth-child(3)   {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 100%;
+}
+
+.overlayHeroImgBig > div:nth-child(3):hover   {
+    background-color: #8BEC87; 
+}
+
+.overlayHeroImgBig > div:nth-child(1)   {
+    position: relative;
+    width: 15vw;
+    height: 100%;
+    padding: 0vw 1vw 1vw 0vw;
+   
+}
+
+.employerPlack  {
+    width: 10vw; 
+    height: 10vh; 
+    margin: 2vh 2vw 2vh 2vw;
+    position: relative;
+}
+
+.chevron   {
+    background-color: #8BEC87; 
+    
+    width: 1.5vw; 
+    height: 40vh; 
+    position: absolute; 
+    display: flex; 
+    align-items: center; 
+    
+}
+
+.chevron > div  {
+    width: 100%; 
+    height: 60%;
+}
+
+.chevron:hover  {
+    color: #8BEC87!important;
+}
+
+.chevronLink   > div:hover {
+    background-color: white!important;
+}
+
+
+.thuisButton{
+    display: none!important;
+    
+}
+
+.test       {
+    display: block;
+}
+
+/* Footer */
+
+footer  {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer > div   {
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.0);
+    width: 15vw;
+    height: 100%;
+}
+
+.phoneName, .phoneSubname  {
+    display: none;
+}
+
+
+
+
+
+/* Visual Effects  */
+
+.bottomStream  {
+    position: relative;
+    margin-top: 5vh;
+    border: 4px solid rgba(12  , 162 , 6, 0.2);
+    width: 60vw;
+    margin-left: 2vw;  
+}
+
+.horizontalHR  {
+    position: absolute;
+    margin-top: 5vh;
+    border: 4px solid #337c31;
+    width: 60.38vw;
+    margin-left: 12vw; 
+}
+
+
+.verticalHR   {
+    margin-left: 12vw;
+    margin-top: 5.5vh;
+    position: absolute;
+    border: 4px solid #337c31;
+    height: 5.2vh;
+    width: 2px;
+    z-index: 1;
+}
+
+.activeHR   {
+    position: absolute;
+    border: 4px solid #8BEC87;
+    z-index: 99;
+}
+
+.inActiveHR   {
+    border: none;
+}
+
+
+.aanlegIcon {
+    position: absolute;
+    border: 0.3vw solid #8BEC87;
+}
+
+
+/* Mesurements Object Background */
+
+.smallVisual {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 1.5vh;
+    background-color:#29ABE2;
+    cursor:default;
+    
+}
+
+
+.mediumVisual    {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#29ABE2;
+    cursor:default;
+    z-index: 1;
+}
+
+
+.verticalVisual    {
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw; 
+    height: 10vh; 
+    margin:0 0 0 28vw;
+}
+
+.verticalVisual   > h6 {
+    transform: rotate(-90deg);
+    width: 6vw;
+}
+
+.sidebar  {
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 60vh;
+    transform: rotate(90º);
+     
+}  
+
+
+
+.sidebar > h6 {
+    transform: rotate(-90deg);
+    width: 6vw;
+}
+
+
+.bigVisual   {
+    display: flex;
+    position: absolute;
+    justify-content: end; 
+    margin-left: 18vw;
+    
+}
+
+
+
+/* Removable objects */
+
+.Banner {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    font-size: 10vw;
+    z-index: 9999;
+}
+
+@media screen and (min-width: 1281px){
+   
+}
+@media (min-width: 601px){
+    .phoneDiv   {
+        display: none!important;
+    }
+
+    .phoneName  {
+        display: none;
+    }
+
+    .phoneSubname  {
+        display: none;
+    }
+
+    
+
+
+}
+
+
+@media screen and (max-width: 600px)
+
+
+
+{
+
+.mediumVisual   {
+    display:none ;
+}
+
+main    {
+height: 90vh;    
+}
+
+.desktopDiv     {
+    display: none!important;
+}
+
+
+Header   {
+        display: none;
+    }
+
+button  {
+   
+    width: 100%;
+    height: 100%;
+    border: 4px solid white;
+    padding: 0;
+    font-size: 8vw;
+
+}
+
+.overlayMiddleBlock {
+    display: none!important;
+}
+
+.leftBlock  {
+    display: none;
+}
+
+.overlayMiddleBlock {
+    display: none;
+}
+
+.sidebar    {
+    display: none;
+}
+
+.middleBlock    {
+    width: 80vw;
+    height: 90vh;  
+}
+
+.middleBlock    > div   {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contentboxContainer    {
+    display: none;
+}
+
+.middleDiv  {
+
+    display: block!important;
+    background-color: #337c31;
+}
+
+.phoneDiv   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 ;
+    width: 100%;
+    height: 100%;
+}
+
+
+footer  >div:not(:nth-child(3))  {
+    display: none;
+}
+
+footer  >div:nth-child(3)  {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phoneName, .phoneSubname  {
+    display: block;
+   
+}
+
+.phoneName  {
+    margin: 0 0 0 0;
+}
+h1      {
+    
+    z-index: 9999;
+   
+}
+    }
+
+.thuisButton {
+    display: block!important;
+}
+
+
+
+.test       {
+    display: none;
+}
+    @media screen and (max-width: 1279px) and (min-width: 601px)
+    {
+    
+    
+    /* .upperHeader, .middleHeader, .lowerHeader   {
+            display: none;
+        }
+    
+    .leftBlock  {
+        display: none;
+    }
+    
+    .overlayMiddleBlock, .overlayHeroImg {
+        display: none;
+    } */
+    
+    .sidebar    {
+        display: none;
+    }
+    
+    .middleBlock    {
+        width: 80vw;  
+    }
+    
+    .middleBlock    > div   {
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    /* .contentboxContainer    {
+        display: none;
+    }  */
+    
+        
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
